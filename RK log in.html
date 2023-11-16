@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+<div class="body" >
+<h1 align="center" style="position:relative;"  >RKSHOP LOG IN</h1>
+<br><br><br><br>
+<form class="form" method="post"  enctype="text/plain" >
+<label for="name">username :</label> <input id="name" name="name"  type="text" class="username" ><br><br>
+<label for="password">password :</label> <input id="password" name="password"  type="password" class="pass" ><br><br>
+<label for="Email"><pre>Email  <span style="position:relative;left:4px;" >:</span></pre></label> <input id="email" name="email"  type="email" class="email" >
+<input value="log in" type="submit" class="login"  onclick="submitIt()">
+</form>
+<br><br><br><br><br>
+<p align="center" >already have account <a href="#" >sing in</a> here</p>
+</div>
+<script type="text/javascript">
+let username=document.querySelector(".username");
+let password=document.querySelector(".password");
+let email=document.querySelector(".email");
+let u=username.value.trim();
+let p=password.value.trim();
+let e=email.value.trim();
+function submitIt(){
+if(u==""||p==""||e==""){
+alert("please fill all currently");
+}
+
+}
+</script>
+
+</body>
+<style type="text/css">
+html,body{height:100%;}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:linear-gradient(rgb(60,80,40),rgb(10,80,160));}
+.body{position:relative;top:100px;}
+/*.body{height:627px;background:linear-gradient(rgb(60,80,40),rgb(10,80,160));width:100%;}*/
+.form{line-height:2em;margin-left:20px;}
+label{font-size:20px;text-transform:capitalize;}
+input{width:60%;height:30px;text-shadow:0px 1px black;font-family:times;position:relative;bottom:3px;color:#fff;text-align:center;border:0;background:none; border-bottom:1px solid black;}
+.email{position:relative;bottom:41px;left:104px;}
+.pass{position:relative;  left:2px;bottom:4px;}
+.login{border:0;box-shadow:0px 0px 5px green;border-radius:5px;background:green;height:42px; width:90%; right:20px;top:305px;position:absolute;font-size:26px;}
+.login:active{background:lightgreen; box-shadow:none;color:teal;}
+h1{top:30px;}
+@media screen and (min-width:600px){
+ input{
+width:80%;
+
+  }
+
+  .login{
+  right:24px;
+  width:94%;
+  }
+  .body{
+  height:470px;
+  }
+  h1{
+  top:40px;
+  }
+  body{
+  background:none;
+  }
+  html,body{height:100%;}
+  .body{top:0;height:490px;background:linear-gradient(rgb(60,80,40),rgb(10,80,160));width:100%;}
+}
+@media screen and (max-height:600px){
+body{background:linear-gradient(rgb(10,80,160),rgb(10,80,160));}
+}
+</style>
+</html>
