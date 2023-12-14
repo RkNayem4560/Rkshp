@@ -6,7 +6,7 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background:rgb(0,5,10);
+    background:#fff;
 }
 html{scroll-behavior:smooth;}
 .scroll{position:absolute;top:0px;}
